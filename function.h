@@ -12,7 +12,7 @@
 /*Menus*/
 void main_menu();
 void statistics(int option);
+void option_menu_search();
+void menu_search(int option);
 
-
-void hello();
 #endif //INC_2021_FUNCTION_H
