@@ -37,3 +37,50 @@ Em concreto a aplicação deverá cumprir os seguintes requisitos funcionais a s
 | MB |  |
 | B |  |
 | S |  |
+
+- Main menu:
+  Choose file:
+- Preview File:
+    - All table
+    - Choose a specific lines
+    - History file
+- Statistics menu:
+    - sum
+    - absolute sum
+    - relative sum
+    - average
+    - standard deviation
+    - MAX
+    - MIN
+    - Median
+    - Quarter
+    - others...
+- Files
+    - Open file
+    - Create new file
+        - timestamp
+        - name
+        - indexCol
+    - Save file CVS
+        - Save statistics
+    - Delete file CVS;
+    - Save file BIN
+    - Delete File BIN;
+- Search history
+    - By name
+    - By value
+- ## Ao executar a primeira chamada do programa tem que ler os ficheiros de texto.
+- Tem que ler que ficheiros existe na pasta e armazenar numa tabela.
+- Tem que existir a possibilidade de escolher o ficheiro
+- A escolher o ficheiro deve de apresentar um menu a dizer pre-visualizar dados e estatisticas, abrir ou voltar.
+## Ao abrir o ficheiro tem que :
+- Ler o numero de linhas
+- Depois ver quantos elementos tem por linha;
+  O programa deverá calcular as estatísticas de sumário e.g. soma, média,mediana, desvio padrão e outras operações básicas
+## Editar ficheiro
+- Tem que guardar historico de todos os valores que foram acrescentados, alterados ou apagados.
+    - Exemplo na visualizacao dos dados :Add: xxx | Line 1 | Col 2 | Value 123 | Delete: xxx | Line 1 | Col 2 | Value 123 | edit: xxx | Line 1 | Col 2 | Value 123 |
+    - Gravacao: 1;1;2;123 - Primeiro numero funciona como flag para saber o foi feito.
+        - 1 - add
+        - 2 - delete
+        - 3 - edit
